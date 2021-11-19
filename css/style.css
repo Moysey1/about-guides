@@ -123,10 +123,7 @@ body {
 a:hover {
     color: blue;
 }
-.header_links_item:hover {
-    color: #FFFFFF;
-    background-color: aqua;
-}
+
 
 a:active {
     color: black;
