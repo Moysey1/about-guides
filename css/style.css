@@ -61,6 +61,14 @@ body {
     margin-top: 10px;
 }
 
+.header_button_item {
+    background-color: #FFFFFF;
+    border: none;
+    outline: none;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
 .humanity {
     display: flex;
     justify-content: space-between;

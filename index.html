@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Thalby</title>
     <link rel="stylesheet" href="css/style.css">
+    <base target="_blank">
 </head>
 <body>
 <div class="container">
@@ -18,9 +19,9 @@
             <img src='images/logo.png' alt="thalby">
         </div>
         <div class="header_links">
-            <a class="header_links_item" href="#"><img src="images/insta.png" alt="Instagram"></a>
+            <a class="header_links_item" href="https://instagram.com/kozlenko41?utm_medium=copy_link"><img src="images/insta.png" alt="Instagram"></a>
             <a class="header_links_item" href="#"><img src="images/search.png" alt="Search"></a>
-            <a class="header_links_item" href="#"><img src="images/cart.png" alt="cart"></a>
+            <button class="header_button_item" id="card_content"><img src="images/cart.png" alt="cart"></button>
         </div>
     </div>
     <div class="humanity">
@@ -37,24 +38,24 @@
         <p class="guides_subtitle">Available as ebooks here and on Amazon.</p>
         <h2 class="heading">Our best sellers</h2>
     </div>
-    <div class="best_sellers">
-        <div class="best_sellers_card">
+    <div class="best_sellers" >
+        <div class="best_sellers_card" >
             <img src="images/image2.png" alt="image2">
             <h3 class="caption">Thalby Guide to <br> French Culture and<br> Heritage</h3>
-            <p class="best_sellers_price">USD 6.99</p>
-            <a class="best_sellers_link" href="#">Add to cart</a>
+            <p class="best_sellers_price"> USD 6.99</p>
+            <button class="best_sellers_button" id="01">Add to cart</button>
         </div>
         <div class="best_sellers_card">
             <img src="images/image3.png" alt="image2">
             <h3 class="caption">Thalby Guide to <br>French People and <br>Society</h3>
-            <p class="best_sellers_price">USD 6.99</p>
-            <a class="best_sellers_link" href="#">Add to cart</a>
+            <p class="best_sellers_price"> USD 6.99</p>
+            <button class="best_sellers_button" id="02">Add to cart</button>
         </div>
         <div class="best_sellers_card">
             <img src="images/image4.png" alt="image2">
             <h3 class="caption">Thalby Guide to <br>German Culture and <br>Heritage</h3>
-            <p class="best_sellers_price">USD 6.99</p>
-            <a class="best_sellers_link" href="#">Add to cart</a>
+            <p class="best_sellers_price"> USD 6.99</p>
+            <button class="best_sellers_button" id="03">Add to cart</button>
         </div>
     </div>
     <div class="people_society">
@@ -178,5 +179,6 @@
         </div>
     </div>
 </div>
+<script src="js/index.js"></script>
 </body>
 </html>
