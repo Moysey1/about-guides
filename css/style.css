@@ -61,6 +61,14 @@ body {
     margin-top: 10px;
 }
 
+.header_button_item {
+    background-color: #FFFFFF;
+    border: none;
+    outline: none;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
 .humanity {
     display: flex;
     justify-content: space-between;
@@ -108,11 +116,14 @@ body {
 .btn:hover {
     background-color: aqua;
     color: black ;
+
+    transition-duration:0.9s ;
 }
 
 .btn:active {
     background-color: blueviolet;
     color: red;
+    transition-duration: 10ms;
 }
 
 .btn:disabled {
@@ -196,15 +207,11 @@ a:active {
     color: #000000;
 }
 
-.best_sellers_link {
+.best_sellers_button {
     font-family: Roboto,sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 17px;
-    line-height: 20px;
-    text-align: center;
-    text-decoration-line: underline;
-    color: #000000;
+    margin-left: 97px;
     display: block;
 }
 .people_society {
@@ -286,7 +293,7 @@ a:active {
 .features_guides_item:nth-child(3n+2) { order: 2; }
 .features_guides_item:nth-child(3n)   { order: 3; }
 
-/* Новые колонки разделители */
+
 .features_guides::before,
 .features_guides::after {
     content: "";
@@ -360,7 +367,17 @@ a:active {
     margin-left: 60px;
     margin-bottom: 16px;
 }
-
+.feedback_display {
+    margin-top: 30px;
+    text-align: left;
+    color: black;
+    font-weight: bold;
+}
+.name_one,
+.name_two,
+.email {
+  color: blue;
+}
 .page-footer{
     background-color: black;
     padding: 0 272px 0 171px ;
