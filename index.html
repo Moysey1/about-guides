@@ -20,7 +20,7 @@
         </div>
         <div class="header_links">
             <a class="header_links_item" href="https://instagram.com/kozlenko41?utm_medium=copy_link"><img src="images/insta.png" alt="Instagram"></a>
-            <a class="header_links_item" href="#"><img src="images/search.png" alt="Search"></a>
+            <a class="header_links_item" href="https://webkab.ru/zhivoj-poisk-po-tekstu-jquery"><img src="images/search.png" alt="Search"></a>
             <button class="header_button_item" id="card_content"><img src="images/cart.png" alt="cart"></button>
         </div>
     </div>
@@ -43,19 +43,19 @@
             <img src="images/image2.png" alt="image2">
             <h3 class="caption">Thalby Guide to <br> French Culture and<br> Heritage</h3>
             <p class="best_sellers_price"> USD 6.99</p>
-            <button class="best_sellers_button" id="01">Add to cart</button>
+            <button class="btn best_sellers_button" id="01">Add to cart</button>
         </div>
         <div class="best_sellers_card">
             <img src="images/image3.png" alt="image2">
             <h3 class="caption">Thalby Guide to <br>French People and <br>Society</h3>
             <p class="best_sellers_price"> USD 6.99</p>
-            <button class="best_sellers_button" id="02">Add to cart</button>
+            <button class="btn best_sellers_button" id="02">Add to cart</button>
         </div>
         <div class="best_sellers_card">
             <img src="images/image4.png" alt="image2">
             <h3 class="caption">Thalby Guide to <br>German Culture and <br>Heritage</h3>
             <p class="best_sellers_price"> USD 6.99</p>
-            <button class="best_sellers_button" id="03">Add to cart</button>
+            <button class="btn best_sellers_button" id="03">Add to cart</button>
         </div>
     </div>
     <div class="people_society">
@@ -63,14 +63,14 @@
         <div class="guides_card">
             <h2 class="heading">People and Society</h2>
             <p class="guides_card_subtitle">Our guides to society deliver all<br> the social insight you need,<br> helping you understand how<br> people live, love and play today<br> and why communities are the<br> way they are.</p>
-            <a class="guides_card_link" href="#">Shop Society Guides</a>
+            <a class="guides_card_link" href="https://thalby.com/collections/shop-our-guides/guide-type_people?sort_by=title-ascending">Shop Society Guides</a>
         </div>
     </div>
     <div class="culture_heritage">
         <div class="culture_card">
             <h2 class="heading">Culture and Heritage</h2>
             <p class="guides_card_subtitle">As well as covering heritage<br> and tradition, our guides to<br> culture introduce you to the<br> designers, artists and chefs<br> creating at the forefront of<br> today's culture.</p>
-            <a class="guides_card_link" href="#" >Shop Culture Guides </a>
+            <a class="guides_card_link" href="https://thalby.com/collections/shop-our-guides/country_germany?sort_by=title-ascending" >Shop Culture Guides </a>
         </div>
         <img class="guides_card_image" src="images/Rectangle1.png" alt="rectangle1">
     </div>
@@ -79,7 +79,7 @@
         <div class="guides_card">
             <h2 class="heading">Power and Politics</h2>
             <p class="guides_card_subtitle">Our guides to power take you<br> behind the scenes to explore the<br> power dynamics, policies and<br> politics shaping a country's <br> future and its global position.</p>
-            <a class="guides_card_link" href="#">Coming 2022!</a>
+            <a class="guides_card_link" href="https://thalby.com/collections/shop-our-guides/country_france?sort_by=title-ascending">Coming 2022!</a>
         </div>
     </div>
     <div class="features_guides_subtitle">
@@ -116,32 +116,42 @@
             <img src="images/Rectangle9.png" alt="rectangle9">
             <h3>"I don’t like things to be<br> conventional. If it’s too<br> nice, I bring disorder."</h3>
             <p>Camille Muller,<br>Landscape Designer, France</p>
-            <a class="voices_link" href="#">Discover</a>
+            <a class="voices_link" href="https://thalby.com/blogs/life-stories/camille-muller">Discover</a>
         </div>
         <div class="voices_item">
             <img src="images/Rectangle10.png" alt="rectangle10">
             <h3>"Magic is not magic in <br>the sense that I can just<br> wish for anything."</h3>
             <p>Sonia Kowalewski,<br>Witch, Germany</p>
-            <a class="voices_link" href="#">Discover</a>
+            <a class="voices_link" href="https://thalby.com/blogs/life-stories/sonia-kowalewski">Discover</a>
         </div>
         <div class="voices_item">
             <img src="images/Rectangle11.png" alt="rectangle11">
             <h3>"I was eight years old <br>when I entered my first<br> competition. I won it."</h3>
             <p>Lilly Stoephasius,<br>Skateboarder, Germany</p>
-            <a class="voices_link" href="#">Discover</a>
+            <a class="voices_link" href="https://thalby.com/blogs/life-stories/lilly-stoephasius">Discover</a>
         </div>
     </div>
     <div class="feedback">
         <h1>Keep in touch</h1>
         <h4>Get our travel advice, global views and travel freebies in your <br>inbox</h4>
-        <label class="feedback_label">
-            <input class="feedback_name" type="text" name="First Name" placeholder="First Name">
-            <input class="feedback_name" type="text" name="Last Name" placeholder="Last Name">
-        </label>
-        <label class="feedback_label">
-            <input class="feedback_mail" type="email" name="email" placeholder="Email" required >
-        </label>
-        <button class="btn" type="button">Subscribe</button>
+        <form class="subscription">
+            <label class="feedback_label">
+                <input  class="feedback_name" type="text" name="First Name" placeholder="First Name">
+                <input id="nameTwo" class="feedback_name feedback_last_name" type="text" name="Last Name" placeholder="Last Name">
+            </label>
+            <label class="feedback_label">
+                <input class="feedback_mail" type="email" name="email" placeholder="Email" required >
+            </label>
+            <button class="btn btn_feedback" type="button">Subscribe</button>
+
+        </form>
+        <div class="feedback_display">
+            <span>Имя:</span><span class="name_one"></span>
+            <br>
+            <span>Фамилия:</span><span class="name_two"></span>
+            <br>
+            <span>Email:</span><span class="email"></span>
+        </div>
     </div>
     <div class="page-footer">
         <div class="footer-top">
@@ -155,9 +165,9 @@
         </div>
         <div class="footer-middle">
             <div class="footer_social">
-                <a class="social-btn" href="#"><img src="images/Vector4.png" alt="Фейсбук"></a>
-                <a class="social-btn" href="#"><img src="images/Vector3.png" alt="Инстаграм"></a>
-                <a class="social-btn" href="#"><img src="images/Vector5.png" alt="Твитер"></a>
+                <a class="social-btn" href="https://www.facebook.com/thalbyguides"><img src="images/Vector4.png" alt="Фейсбук"></a>
+                <a class="social-btn" href="https://instagram.com/kozlenko41?utm_medium=copy_link"><img src="images/Vector3.png" alt="Инстаграм"></a>
+                <a class="social-btn" href="https://twitter.com/thalbyguides"><img src="images/Vector5.png" alt="Твитер"></a>
             </div>
             <div class="footer_about">
                 <ul>
